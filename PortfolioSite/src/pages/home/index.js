@@ -8,15 +8,6 @@ import { Link } from "react-router-dom";
 import adith from "./Adith.png";
 
 export const Home = () => {
-  const banner = document.getElementsByClassName("banner")[0];
-  const blocks = document.getElementsByClassName("block");
-  // useEffect(() => {
-  //   for (var i = 0; i < 400; i++) {
-  //     banner.innerHTML += "<div className='blocks'></div>";
-  //     const duration = Math.random() * 5;
-  //     blocks[i].style.animationDuration = duration + "s";
-  //   }
-  // }, []);
   return (
     <HelmetProvider>
       <section id="home" className="home">
@@ -63,14 +54,20 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
-                  <Link to="/contact">
-                    <div id="button_h" className="ac_btn btn">
-                      Contact Me
-                      <div className="ring one"></div>
-                      <div className="ring two"></div>
-                      <div className="ring three"></div>
-                    </div>
-                  </Link>
+                  {/* <Link to="https://drive.google.com/drive/my-drive"> */}
+                  <div id="button_h" className="ac_btn btn">
+                    <a
+                      href="https://drive.google.com/file/d/1xi8lKTqhFRZ81612YliwiayFd6CcsvNN/view?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button>My Resume</button>
+                    </a>
+                    <div className="ring one"></div>
+                    <div className="ring two"></div>
+                    <div className="ring three"></div>
+                  </div>
+                  {/* </Link> */}
                 </div>
               </div>
             </div>

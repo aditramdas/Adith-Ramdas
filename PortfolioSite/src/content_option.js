@@ -107,9 +107,9 @@ const dataportfolio = [{
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_EMAIL: "Adith Ramdas",
+    YOUR_FONE: "+91 9846572858",
+    description: "",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
@@ -118,12 +118,12 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
-    youtube: "https://youtube.com",
-    twitch: "https://twitch.com",
+    github: "https://github.com/aditramdas",
+    facebook: "https://www.facebook.com/adit.ramdas/",
+    linkedin: "https://www.linkedin.com/in/adith-ramdas-45a39b187/",
+    twitter: "https://twitter.com/aditramdas",
+    youtube: "https://www.youtube.com/channel/UCnobFGkDwiT1WE4x0-Zc4sA",
+    twitch: "",
 };
 export {
     meta,

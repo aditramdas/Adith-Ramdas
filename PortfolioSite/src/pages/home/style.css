@@ -134,8 +134,14 @@ section {
 .helloImage:hover{
     background-color: rgb(231, 231, 231);
     box-shadow: 3px 8px 60px -1px rgba(255, 255, 255, 0.9) ;
-    filter: saturate(0%);
     
+}
+#button_h{
+    background-color: white ;
+}
+#button_h > a >button{
+    background-color: transparent;
+    border: none;
 }
 @keyframes animate{
     0%{
