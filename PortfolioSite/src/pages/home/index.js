@@ -1,11 +1,22 @@
 import React from "react";
 import "./style.css";
+import { useEffect } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
+import adith from "./Adith.png";
 
 export const Home = () => {
+  const banner = document.getElementsByClassName("banner")[0];
+  const blocks = document.getElementsByClassName("block");
+  // useEffect(() => {
+  //   for (var i = 0; i < 400; i++) {
+  //     banner.innerHTML += "<div className='blocks'></div>";
+  //     const duration = Math.random() * 5;
+  //     blocks[i].style.animationDuration = duration + "s";
+  //   }
+  // }, []);
   return (
     <HelmetProvider>
       <section id="home" className="home">
@@ -15,10 +26,15 @@ export const Home = () => {
           <meta name="description" content={meta.description} />
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center ">
-          <div
-            className="h_bg-image order-1 order-lg-2 h-100 "
-            style={{ backgroundImage: `ur l(${introdata.your_img_url})` }}
-          ></div>
+          <div className="h_bg-image order-1 order-lg-2 h-100 ">
+            <section className="sectionImg">
+              <div className="banner">
+                <div className="blocks"></div>
+              </div>
+            </section>
+
+            <img className="helloImage" src={adith} alt="" />
+          </div>
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">

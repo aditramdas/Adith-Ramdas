@@ -3,8 +3,16 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
+import Chat from "./Chat.png";
+import IEDC from "./IEDC.png"
+import Gmail from "./Gmail.webp"
+import KnowDoc from "./KnowDoc.png"
+import Spotify from "./Spotify.jpg"
 
 export const Portfolio = () => {
+  const removeQuotes = (str) => {
+    return str;
+  }
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -23,7 +31,7 @@ export const Portfolio = () => {
           {dataportfolio.map((data, i) => {
             return (
               <div key={i} className="po_item">
-                <img src={data.img} alt="" />
+                <img src={`${data.img}`} className="image"/>
                 <div className="content">
                   <p>{data.desctiption}</p>
                   <a href={data.link}>view project</a>
